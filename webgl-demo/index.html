@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Unity-ONT-dAPI</title>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        background: #000;
+      }
+      canvas {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    </style>
+    <!--script src="https://cdn.jsdelivr.net/npm/o3-dapi-core@0.3.0/lib/o3-dapi-core.min.js"></script-->
+    <!--script src="https://cdn.jsdelivr.net/npm/o3-dapi-ont@0.2.3/lib/o3-dapi-ont.min.js"></script-->
+    <script src="browser.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/build4.json");
+    </script>
+  </head>
+  <body>
+    <div id="gameContainer" style="width: 1250px; height: 720px; margin: auto"></div>
+    <script src="dAPI.js"></script>
+  </body>
+</html>
